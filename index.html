@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barbearia Alameda</title>
+<meta name="description" content="Site institucional - troque os dados em site-data.js">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="#topo" class="logo" id="logoNome">Nome da Empresa</a>
+
+    <nav class="nav" id="nav">
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a href="#" id="whatsHeader" class="btn btn-whatsapp btn-small" target="_blank" rel="noopener">
+      <svg class="icon-wpp" viewBox="0 0 32 32"><path fill="currentColor" d="M16.001 3C9.373 3 4 8.373 4 15c0 2.34.653 4.53 1.789 6.4L4 29l7.789-1.75A11.94 11.94 0 0 0 16.001 27C22.63 27 28 21.627 28 15S22.63 3 16.001 3zm0 21.7c-1.98 0-3.83-.55-5.41-1.51l-.39-.23-4.62 1.04 1.06-4.5-.25-.4A9.66 9.66 0 0 1 5.3 15c0-5.9 4.8-10.7 10.7-10.7S26.7 9.1 26.7 15 21.9 24.7 16.001 24.7zm5.86-7.98c-.32-.16-1.9-.94-2.19-1.05-.29-.11-.5-.16-.72.16-.21.32-.82 1.05-1.01 1.26-.19.21-.37.24-.69.08-.32-.16-1.34-.49-2.55-1.57-.94-.84-1.58-1.87-1.76-2.19-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.55.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.55-.08-.16-.72-1.73-.98-2.37-.26-.62-.53-.54-.72-.55-.19-.01-.4-.01-.61-.01s-.55.08-.84.4c-.29.32-1.1 1.08-1.1 2.63s1.13 3.05 1.29 3.26c.16.21 2.22 3.39 5.38 4.75.75.32 1.34.51 1.8.66.76.24 1.44.21 1.99.13.61-.09 1.9-.78 2.16-1.53.27-.75.27-1.4.19-1.53-.08-.13-.29-.21-.61-.37z"/></svg>
+      <span id="whatsHeaderTexto">WhatsApp</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== CAPA / HERO ===== -->
+<section class="hero" id="topo">
+  <div class="hero-overlay"></div>
+  <img id="heroImagem" class="hero-img" src="" alt="Foto de capa do negócio">
+  <div class="container hero-content">
+    <p class="hero-cidade" id="heroCidade">Cidade - UF</p>
+    <h1 id="heroNome">Nome da Empresa</h1>
+    <p class="hero-slogan" id="heroSlogan">Slogan do negócio</p>
+    <div class="hero-botoes">
+      <a href="#" id="whatsHero" class="btn btn-whatsapp" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      <a href="#servicos" class="btn btn-outline-white">Ver serviços</a>
+    </div>
+  </div>
+  <a href="#servicos" class="scroll-indicador" aria-label="Rolar para baixo">
+    <span></span>
+  </a>
+</section>
+
+<!-- ===== SERVIÇOS ===== -->
+<section class="section" id="servicos">
+  <div class="container">
+    <p class="section-tag">O que fazemos</p>
+    <h2 class="section-title">Nossos Serviços</h2>
+    <div class="grid-servicos" id="gridServicos"></div>
+  </div>
+</section>
+
+<!-- ===== SOBRE ===== -->
+<section class="section section-alt" id="sobre">
+  <div class="container sobre-inner">
+    <div class="sobre-imagem">
+      <img id="sobreImagem" src="" alt="Foto do interior do estabelecimento">
+    </div>
+    <div class="sobre-texto">
+      <p class="section-tag">Quem somos</p>
+      <h2 class="section-title" id="sobreTitulo">Sobre a Barbearia Alameda</h2>
+      <p id="sobreDescricao">Descrição da empresa.</p>
+      <div class="sobre-destaques" id="sobreDestaques"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALERIA ===== -->
+<section class="section" id="galeria">
+  <div class="container">
+    <p class="section-tag">Confira</p>
+    <h2 class="section-title">Galeria de Fotos</h2>
+    <div class="grid-galeria" id="gridGaleria"></div>
+    <p class="aviso-demo">* Imagens meramente ilustrativas (banco de imagens gratuito), utilize fotos reais do seu negócio.</p>
+  </div>
+</section>
+
+<!-- ===== AVALIAÇÕES ===== -->
+<section class="section section-alt" id="avaliacoes">
+  <div class="container">
+    <p class="section-tag">O que dizem</p>
+    <h2 class="section-title">Avaliações de Clientes</h2>
+    <div class="grid-avaliacoes" id="gridAvaliacoes"></div>
+    <p class="aviso-demo">* Avaliações demonstrativas fictícias, apenas para fins de exemplo do template.</p>
+  </div>
+</section>
+
+<!-- ===== LOCALIZAÇÃO E HORÁRIO ===== -->
+<section class="section" id="localizacao">
+  <div class="container loc-inner">
+    <div class="loc-info">
+      <p class="section-tag">Onde estamos</p>
+      <h2 class="section-title">Localização &amp; Horário</h2>
+
+      <div class="loc-bloco">
+        <h3>Endereço</h3>
+        <p id="locEndereco">Endereço completo</p>
+        <a href="#" id="btnComoChegar" class="btn btn-primario" target="_blank" rel="noopener">Como chegar</a>
+      </div>
+
+      <div class="loc-bloco">
+        <h3>Horário de funcionamento</h3>
+        <ul id="listaHorarios" class="lista-horarios"></ul>
+      </div>
+
+      <div class="loc-bloco">
+        <h3>Redes sociais</h3>
+        <a href="#" id="linkInstagram" class="link-social" target="_blank" rel="noopener">@instagram</a>
+      </div>
+    </div>
+
+    <div class="loc-mapa">
+      <iframe id="mapaEmbed" src="" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTATO ===== -->
+<section class="section section-contato" id="contato">
+  <div class="container contato-inner">
+    <p class="section-tag section-tag-claro">Fale conosco</p>
+    <h2 class="section-title titulo-claro">Entre em Contato</h2>
+    <p class="contato-sub">Atendimento rápido pelo WhatsApp ou telefone.</p>
+
+    <div class="contato-botoes">
+      <a href="#" id="whatsContato" class="btn btn-whatsapp btn-grande" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      <a href="#" id="telContato" class="btn btn-outline-white btn-grande">Ligar agora</a>
+    </div>
+
+    <div class="contato-dados">
+      <p id="contatoEndereco"></p>
+      <p id="contatoCidade"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RODAPÉ ===== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="footer-nome" id="footerNome">Nome da Empresa</p>
+    <p id="footerSlogan">Slogan do negócio</p>
+    <div class="footer-links">
+      <a href="#" id="footerInstagram" target="_blank" rel="noopener">Instagram</a>
+      <a href="#" id="footerWhats" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="#" id="footerMapa" target="_blank" rel="noopener">Google Maps</a>
+    </div>
+    <p class="footer-copy" id="footerCopy">© 2026 Nome da Empresa. Todos os direitos reservados.</p>
+    <p class="footer-demo">Site modelo com dados demonstrativos.</p>
+  </div>
+</footer>
+
+<!-- ===== BOTÃO FLUTUANTE WHATSAPP ===== -->
+<a href="#" id="whatsFlutuante" class="whats-flutuante" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32"><path fill="currentColor" d="M16.001 3C9.373 3 4 8.373 4 15c0 2.34.653 4.53 1.789 6.4L4 29l7.789-1.75A11.94 11.94 0 0 0 16.001 27C22.63 27 28 21.627 28 15S22.63 3 16.001 3zm0 21.7c-1.98 0-3.83-.55-5.41-1.51l-.39-.23-4.62 1.04 1.06-4.5-.25-.4A9.66 9.66 0 0 1 5.3 15c0-5.9 4.8-10.7 10.7-10.7S26.7 9.1 26.7 15 21.9 24.7 16.001 24.7zm5.86-7.98c-.32-.16-1.9-.94-2.19-1.05-.29-.11-.5-.16-.72.16-.21.32-.82 1.05-1.01 1.26-.19.21-.37.24-.69.08-.32-.16-1.34-.49-2.55-1.57-.94-.84-1.58-1.87-1.76-2.19-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.55.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.55-.08-.16-.72-1.73-.98-2.37-.26-.62-.53-.54-.72-.55-.19-.01-.4-.01-.61-.01s-.55.08-.84.4c-.29.32-1.1 1.08-1.1 2.63s1.13 3.05 1.29 3.26c.16.21 2.22 3.39 5.38 4.75.75.32 1.34.51 1.8.66.76.24 1.44.21 1.99.13.61-.09 1.9-.78 2.16-1.53.27-.75.27-1.4.19-1.53-.08-.13-.29-.21-.61-.37z"/></svg>
+</a>
+
+<script src="site-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
